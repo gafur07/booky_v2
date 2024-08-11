@@ -1,0 +1,80 @@
+@import "/src/assets/styles/colors.scss";
+
+.phone
+{
+	width: 100%;
+	transition: all 0.2s;
+	outline: none;
+	border: 1px solid $primary-color;
+    border-radius: 16px;
+    margin-bottom: 15px;
+	color: rgba(0, 0, 0, 0.88);
+    padding: 13px;
+    
+    ::placeholder {
+        color: #a1a1a1  ;
+    }
+
+	&.error
+	{
+		border-color: $primary-color;
+		
+		&:hover
+		{
+			border-color: $primary-color;
+		}
+	}
+
+	&::placeholder
+	{
+		color: rgba(0, 0, 0, 0.25);
+		user-select: none;
+		opacity: 1;
+	}
+
+	&:placeholder-shown
+	{
+		text-overflow: ellipsis;
+	}
+
+	&:hover:not(.disabled)
+	{
+		border-color: $primary-color;
+	}
+
+	&:focus, 
+	&:focus-within {
+		border-color: $primary-color;
+		box-shadow: 0 0 0 2px rgba(255, 105, 5, 0.06);
+	}
+	
+	&:active
+	{
+		box-shadow:0 0 0 2px rgba(255, 105, 5, 0.06);
+	}
+	
+	&.disabled
+	{
+		cursor: not-allowed;
+		background-color: rgba(0, 0, 0, 0.04);
+		color: rgba(0, 0, 0, 0.25);
+	}
+
+	&.small
+	{
+		font-size: 14px;
+		padding: 0 7px;
+	}
+	&.middle
+	{
+		font-size: 14px;
+		padding: 4px 11px;
+		line-height: 1.5714285714285714;
+	}
+	&.large
+	{
+		font-size: 16px;
+		padding: 7px 11px;
+		line-height: 1.5;
+	}
+}

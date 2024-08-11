@@ -1,0 +1,43 @@
+.swiperSlide {
+    position: relative;
+    min-height: 320px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    max-width: 100%;
+}
+
+.iframeSlide {
+    border-radius: 20px;
+    height: 500px;
+    width: 800px;
+    z-index: 5;
+
+    @media (max-width: 1070px) {
+        height: 400px;
+        width: 700px;
+    }
+
+    @media (max-width: 1050px) {
+        height: 80%;
+        width: 200px;
+    }
+}
+
+.imgSlide {
+    border-radius: 20px;
+    height: 500px;
+    width: 800px;
+    z-index: 5;
+
+    @media (max-width: 1070px) {
+        height: 400px;
+        width: 700px;
+    }
+
+    @media (max-width: 1050px) {
+        height: 100%;
+        width: 200px;
+    }
+}
